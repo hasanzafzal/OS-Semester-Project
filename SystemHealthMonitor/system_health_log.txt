@@ -1,0 +1,245 @@
+===================== System Health Report (09-12-2025 11:47:35) =====================
+CPU Usage:
+2.2%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.8Gi       8.7Gi       1.1Gi       3.7Gi        11Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.4G   89G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  160K   82K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G   16K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.4G   89G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  180K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+  10166 ps               100  0.0
+   8455 Isolated Web Co 37.2  4.0
+   7883 firefox         14.0  3.5
+   3412 gnome-software  11.3  1.8
+   2980 gnome-shell     10.4  1.8
+
+System Uptime:
+up 7 minutes
+==============================================================================
+===================== System Health Report (09-12-2025 11:52:43) =====================
+CPU Usage:
+13.9%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       4.0Gi       8.2Gi       1.1Gi       4.0Gi        11Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.4G   89G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  160K   82K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G  8.0K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.4G   89G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  180K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+  11597 mutter-x11-fram 70.2  0.5
+  11574 Xwayland        36.2  0.5
+   8455 Isolated Web Co 22.8  4.2
+  11573 python3         22.5  0.2
+  11605 ibus-x11        15.5  0.3
+
+System Uptime:
+up 12 minutes
+==============================================================================
+===================== System Health Report (09-12-2025 11:56:03) =====================
+CPU Usage:
+12%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       4.1Gi       8.1Gi       1.1Gi       4.0Gi        10Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.4G   89G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  160K   82K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G  8.0K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.4G   89G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  180K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+  11777 python3         30.3  0.2
+   8455 Isolated Web Co 22.6  4.3
+   7883 firefox          9.3  3.5
+   2980 gnome-shell      8.4  2.2
+   3412 gnome-software   7.3  1.9
+
+System Uptime:
+up 16 minutes
+==============================================================================
+===================== System Health Report (09-12-2025 11:57:00) =====================
+CPU Usage:
+14%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       4.1Gi       8.1Gi       1.1Gi       4.0Gi        10Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.4G   89G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  160K   82K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G  8.0K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.4G   89G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  180K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+  11929 python3         32.1  0.2
+   8455 Isolated Web Co 21.5  4.4
+   7883 firefox          9.2  3.5
+   2980 gnome-shell      8.3  2.2
+   3412 gnome-software   6.9  1.9
+
+System Uptime:
+up 17 minutes
+==============================================================================
+===================== System Health Report (09-12-2025 12:18:40) =====================
+CPU Usage:
+14.9%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.4Gi       9.1Gi       1.0Gi       3.7Gi        11Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.3G   90G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  161K   81K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G  8.0K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.3G   90G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  164K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+   7666 mutter-x11-fram 64.0  0.5
+   7652 Xwayland        30.1  0.4
+   7651 python3         23.2  0.2
+   6256 Isolated Web Co 21.8  4.2
+   7683 ibus-x11        17.0  0.3
+
+System Uptime:
+up 16 minutes
+==============================================================================
+===================== System Health Report (09-12-2025 12:19:48) =====================
+CPU Usage:
+12.3%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.5Gi       9.1Gi       1.1Gi       3.7Gi        11Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.3G   90G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  161K   81K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G  8.0K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.3G   90G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  164K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+   7884 python3         28.5  0.2
+   6256 Isolated Web Co 24.0  4.4
+   5617 firefox         10.5  3.3
+   3232 gnome-shell      5.2  1.8
+   3656 gnome-software   2.0  1.4
+
+System Uptime:
+up 17 minutes
+==============================================================================
+===================== System Health Report (09-12-2025 12:19:54) =====================
+CPU Usage:
+11.7%
+
+Memory Usage:
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       3.5Gi       9.1Gi       1.1Gi       3.7Gi        11Gi
+Swap:          8.0Gi          0B       8.0Gi
+
+Disk Usage:
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1p7   99G  8.3G   90G   9% /
+devtmpfs        7.6G     0  7.6G   0% /dev
+tmpfs           7.6G   92K  7.6G   1% /dev/shm
+efivarfs        246K  161K   81K  67% /sys/firmware/efi/efivars
+tmpfs           3.1G  2.2M  3.1G   1% /run
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-journald.service
+tmpfs           7.6G  8.0K  7.6G   1% /tmp
+/dev/nvme0n1p7   99G  8.3G   90G   9% /home
+/dev/nvme0n1p6  2.0G  355M  1.5G  20% /boot
+/dev/nvme0n1p1  549M  121M  429M  22% /boot/efi
+tmpfs           1.0M     0  1.0M   0% /run/credentials/systemd-resolved.service
+tmpfs           1.6G  164K  1.6G   1% /run/user/1000
+
+Top 5 CPU-Consuming Processes:
+    PID COMMAND         %CPU %MEM
+   7963 python3         30.3  0.2
+   6256 Isolated Web Co 23.9  4.3
+   5617 firefox         10.4  3.3
+   3232 gnome-shell      5.2  1.8
+   3656 gnome-software   1.9  1.4
+
+System Uptime:
+up 17 minutes
+==============================================================================
