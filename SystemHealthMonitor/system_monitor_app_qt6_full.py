@@ -1,6 +1,8 @@
 import sys
 import psutil
 import time
+import subprocess
+import os
 from datetime import datetime
 
 from PyQt6.QtWidgets import (
@@ -9,6 +11,11 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import QTimer, Qt
 import pyqtgraph as pg
+
+# ================= CONFIG =================
+
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+BASH_SCRIPT = os.path.join(BASE_DIR, "system_health.sh")
 
 # ================= MAIN WINDOW =================
 
@@ -60,11 +67,15 @@ class SystemMonitor(QWidget):
         self.setLayout(main_layout)
         self.apply_theme()
 
-        # --------- Timer ----------
-        self.timer = QTimer()
-        self.timer.timeout.connect(self.update_dashboard)
-        self.timer.timeout.connect(self.update_process_table)
-        self.timer.start(1000)
+        # --------- Timers ----------
+        self.ui_timer = QTimer()
+        self.ui_timer.timeout.connect(self.update_dashboard)
+        self.ui_timer.timeout.connect(self.update_process_table)
+        self.ui_timer.start(1000)  # UI updates every second
+
+        self.log_timer = QTimer()
+        self.log_timer.timeout.connect(self.run_bash_logger)
+        self.log_timer.start(10000)  # Run Bash every 10 seconds
 
     # ================= DASHBOARD =================
 
@@ -124,7 +135,9 @@ class SystemMonitor(QWidget):
         self.cpu_label.setText(f"CPU Usage: {cpu}%")
         self.mem_label.setText(f"Memory Usage: {mem.percent}%")
         self.disk_label.setText(f"Disk Usage: {disk.percent}%")
-        self.time_label.setText("Last Updated: " + datetime.now().strftime("%H:%M:%S"))
+        self.time_label.setText(
+            "Last Updated: " + datetime.now().strftime("%H:%M:%S")
+        )
 
         self.cpu_data.append(cpu)
         self.mem_data.append(mem.percent)
@@ -146,8 +159,25 @@ class SystemMonitor(QWidget):
         for row, proc in enumerate(processes):
             self.process_table.setItem(row, 0, QTableWidgetItem(str(proc.info['pid'])))
             self.process_table.setItem(row, 1, QTableWidgetItem(proc.info['name']))
-            self.process_table.setItem(row, 2, QTableWidgetItem(f"{proc.info['cpu_percent']}"))
+            self.process_table.setItem(row, 2, QTableWidgetItem(str(proc.info['cpu_percent'])))
             self.process_table.setItem(row, 3, QTableWidgetItem(f"{proc.info['memory_percent']:.2f}"))
+
+    # ================= BASH INTEGRATION =================
+
+    def run_bash_logger(self):
+        """
+        Runs the Bash backend script for logging purposes.
+        GUI does NOT depend on its output.
+        """
+        if os.path.exists(BASH_SCRIPT):
+            try:
+                subprocess.Popen(
+                    ["bash", BASH_SCRIPT],
+                    stdout=subprocess.DEVNULL,
+                    stderr=subprocess.DEVNULL
+                )
+            except Exception as e:
+                print("Bash script error:", e)
 
     # ================= THEME =================
 
